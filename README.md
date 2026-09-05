@@ -1,40 +1,20 @@
-Aegis Journal - Secure Personal Gemini Journal | APAC Edition
-Zero-knowledge encrypted journaling companion powered by Gemini AI.
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-🔴 Live Demo
-Working Prototype Video (2:30 min HD): https://youtu.be/GoHMML2_tmE **LinkedIn Post:https://lnkd.in/p/d-YATird
+# Run and deploy your AI Studio app
 
-Note: Live deployment requires Firebase & Gemini secrets. Please refer to the demo video for full working prototype. Code runs locally.
+This contains everything you need to run your app locally.
 
-💡 Problem & Solution
-Journaling apps store private thoughts in plain text. Aegis Journal solves this with client-side PII scrubbing + PBKDF2 + AES-GCM encryption. Raw thoughts never leave device unencrypted. Gemini analyzes only decrypted secure content server-side.
+View your app in AI Studio: https://ai.studio/apps/f50c26bf-a170-4c10-85ec-d752ed8463ae
 
-✨ Features
-🔒 Firebase Auth for secure login/signup
-📝 User-isolated Firestore storage at users/{userId}/entries/{entryId} with fields encryptedData, iv, moodScore, createdAt
-🤖 Multi-turn Gemini API for mood analysis, intelligent insights & auto-tags
-🛡️ Client-side security - AES-GCM encryption before Firestore save
-☁️ Cloud Run ready containerized deployment
-📱 React + Vite + Tailwind CSS
-🛠️ Tech Stack
-Frontend: React, Vite, Tailwind CSS
-Backend: Node.js Express (server.ts)
-Auth & DB: Firebase Auth, Firestore, firestore.rules
-AI: Google Gemini API
-Deployment: Cloud Run, Firebase Hosting
-🚀 Run Locally
-Prerequisites: Node.js
+## Run Locally
 
-Clone: git clone https://github.com/HemantSharma1803/aegis-journal-apac-edition
-Install: npm install
-Create .env.local file:
-Run: npm run dev
-Backend: node server.ts or bun run server.ts
-📂 Project Structure
-server.ts - Express server for Gemini API calls
-firestore.rules - User-isolated security rules
-firebase-blueprint.json - Firebase config
-🏆 Hackathon
-Gen AI Academy APAC - Ideathon Challenge - #AccelerateAIwithCloudRun
+**Prerequisites:**  Node.js
 
-Built by Hemant Sharma - JECRC Jaipur
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

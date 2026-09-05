@@ -1,0 +1,10 @@
+{
+  "name": "Secure Gemini Journal",
+  "description": "Zero-knowledge encrypted journaling companion powered by Gemini AI with client-side PII scrubbing and PBKDF2 AES-GCM encryption.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

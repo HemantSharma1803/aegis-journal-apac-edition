@@ -1,0 +1,29 @@
+{
+  "entities": {
+    "User": {
+      "path": "users/{userId}",
+      "fields": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "cryptoSalt": { "type": "string" },
+        "passphraseHash": { "type": "string" },
+        "securityHint": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "JournalEntry": {
+      "path": "users/{userId}/entries/{entryId}",
+      "fields": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "encryptedData": { "type": "string" },
+        "iv": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "moodScore": { "type": "number" },
+        "tags": { "type": "array" }
+      }
+    }
+  }
+}
