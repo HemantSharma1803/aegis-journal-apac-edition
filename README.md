@@ -33,6 +33,8 @@ Zero-knowledge encrypted AI journaling companion powered by Google Gemini.
 git clone https://github.com/HemantSharma1803/aegis-journal-apac-edition
 cd aegis-journal-apac-edition
 npm install
+cp .env.example .env
+# Add your Firebase & Gemini keys in .env file
 npm run dev
 ```
 
